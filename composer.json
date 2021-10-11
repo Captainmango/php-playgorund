@@ -1,0 +1,19 @@
+{
+    "name": "edward/php-playground",
+    "description": "My notes on PHP",
+    "autoload": {
+        "psr-4": {
+            "Edward\\PhpPlayground\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edward Heaver",
+            "email": "edward.heaver01@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "serve": "php -S localhost:8000"
+    }
+}

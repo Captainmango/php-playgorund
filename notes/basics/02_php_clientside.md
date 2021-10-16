@@ -28,3 +28,12 @@ Using the POST method on a form will not allow the information entered to leak i
 
 ```
 
+## Functions
+
+Functions work as they do in Java. Key differences are no need to declare types of variables. However, you can include these if needed as 'type hints'. You can also have a scalar type definition to restrict the return type at compile time.
+
+Declaring functions is donw with the function keyword and follows normal curly bracket rules for functions.
+
+## return statements
+
+As normal, return exits function execution and returns a value to the function caller. Like Java, they need to have a semicolon at the end.

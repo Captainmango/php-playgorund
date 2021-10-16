@@ -9,8 +9,11 @@
 <body>
     <?php 
 
-        $var1 = 5;
-        echo $var1++;
+      $varArray = [1,2,3,4];
+
+      for($i = 0; $i < count($varArray); $i++){
+        echo $varArray[$i];
+      }
     
     ?>
 </body>

@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php 
-        echo "hello world."
+
+        $var1 = 5;
+        echo $var1++;
     
     ?>
 </body>

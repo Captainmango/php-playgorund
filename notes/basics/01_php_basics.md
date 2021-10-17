@@ -135,3 +135,29 @@ Getting args passed to a script in the console is done by using $argv. This is a
 php myscript.php 1 2 3 4 //=> args are 0-indexed.
 
 ```
+
+## Arrays
+
+Arrays work as they do in other languages. They work in a modern way (like ArrayLists in Java). They can be created using square brackets or the array keyword.
+
+```php
+
+$arr1 = array(1,2,3,4);
+$arr2 = [1,2,3,4];
+
+// these 2 work the same way as of PHP 5.4.
+
+```
+
+These of course are 0-indexed and can have any types of data inside.
+
+### Associative Arrays
+
+These are the key value pair structure in PHP. They work like Ruby hashes and use the same syntax. These do not support JSON-like syntax and key value pairs must be done using => symbols.
+
+```php
+
+$map1 = ["foo"=>"bar", "test"=>"value"];
+$map1["foo"]; //=> "bar"
+
+```

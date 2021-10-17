@@ -9,6 +9,10 @@
 <body>
     <?php 
 
+    $title = "this is a test";
+
+    include "header.php";
+
     $var1 = 345;
     $var2 = (string)$var1;
     

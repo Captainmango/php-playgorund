@@ -37,3 +37,29 @@ Declaring functions is done with the function keyword and follows normal curly b
 ## return statements
 
 As normal, return exits function execution and returns a value to the function caller. Like Java, they need to have a semicolon at the end.
+
+## include statements
+
+This is how we include PHP scripts or HTML files into another file. This works like it does with templating languages like erb or handlebars.js. All that is needed is the include keyword and the path of the file you'd like to include. We need to include the file type here too.
+
+```php
+
+include "foo.html"
+
+```
+
+### PHP include
+
+This is where PHP starts to feel like erb or handlebars.js. This will read data inside the parent file before the include of the child. You can predefine these inside of the child file and this will be presented when the script loads. If no variable matching the name is present, an error is thrown.
+
+```php
+
+$title = "this is a title";
+include "header.php";
+
+//=> the header.php file referenced is like the one in src. If the $title variable isn't BEFORE the include statement an error will occur. Error will be uninitialised variable error.
+
+
+```
+
+Using functions or classes inside of other PHP files is done by including the file too. This follows the Javascript rules insofar that the include statement needs to occur before the function is referenced. After that though, you can reference anything that isn't in a wrapper (like a module or class), by name.

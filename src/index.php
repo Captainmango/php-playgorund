@@ -9,21 +9,29 @@
 <body>
     <?php 
 
-    $title = "this is a test";
+      class Foo {
 
-    include "header.php";
+        public static $count = 0;
 
-    $var1 = 345;
-    $var2 = (string)$var1;
-    
+        public function __construct($bar){
+          $this->bar = $bar;
+          self::$count++;
+        }
 
+        private function test() {
+          return strtoupper($this->bar);
+        }
 
-    function getNumberOfDigitsInNumber(int $number): int {
-      return $number !== 0 ? floor(log10(abs($number))) + 1 : 1;
-    }
+        static function countOf() {
+          return self::$count;
+        }
+      }
 
-    echo $var2[2];
-    
+      $foo1 = new Foo("Foo1");
+      $foo2 = new Foo("Foo2");
+
+      echo Foo::countOf();
+
     ?>
 </body>
 </html>

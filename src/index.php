@@ -9,11 +9,16 @@
 <body>
     <?php 
 
-      $varArray = [1,2,3,4];
+    $var1 = 345;
+    $var2 = (string)$var1;
+    
 
-      for($i = 0; $i < count($varArray); $i++){
-        echo $varArray[$i];
-      }
+
+    function getNumberOfDigitsInNumber(int $number): int {
+      return $number !== 0 ? floor(log10(abs($number))) + 1 : 1;
+    }
+
+    echo $var2[2];
     
     ?>
 </body>

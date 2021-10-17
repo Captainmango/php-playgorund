@@ -77,3 +77,7 @@ for($i = 0; $i < count($varArray); $i++){
 }
 
 ```
+
+Unlike other languages, len or length is not a function or method. To get number of elements in an array, you have to use count function. 
+
+To get the length of numbers, we have to do some code gymnastics.

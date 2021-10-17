@@ -3,7 +3,7 @@
 
 ## URL parameters
 
-URL parameters work the same way they do in other languages. A key difference with PHP though is that a function ran by a form will interpolate these values into the URL. This is because the script is using the GET method, so has to mutate the URL to get this to work. This showcases PHP's serverside nature.
+URL parameters work the same way they do in other languages. A key difference with PHP though is that a function ran by a form will interpolate these values into the URL. This is because the script is using the GET method, so has to mutate the URL to get this to work as no body is sent with a GET request. This showcases PHP's serverside nature.
 
 Changing then URL params does cause state change. This looks like a security flaw tbh.
 
@@ -30,9 +30,9 @@ Using the POST method on a form will not allow the information entered to leak i
 
 ## Functions
 
-Functions work as they do in Java. Key differences are no need to declare types of variables. However, you can include these if needed as 'type hints'. You can also have a scalar type definition to restrict the return type at compile time.
+Functions work as they do in Java. Key differences are no need to declare types of variables. However, you can include these if needed as 'type hints'. You can also have a scalar type declarations to restrict the input type at compile time.
 
-Declaring functions is donw with the function keyword and follows normal curly bracket rules for functions.
+Declaring functions is done with the function keyword and follows normal curly bracket rules for functions.
 
 ## return statements
 

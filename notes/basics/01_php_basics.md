@@ -2,7 +2,7 @@
 
 ## Variables
 
-PHP is a staticly typed language but by default is not (you can opt into strict typing by using: 
+PHP is not a strictly typed language by default (but you can opt into strict typing by using: 
 ```php
 declare(strict_types=1);
 
@@ -18,7 +18,7 @@ $var2 = "test string";
 
 ```
 
-Variable interpolation is done by simply including the variable name in the string. 
+Variable string interpolation is done by simply including the variable name in the string. 
 
 ```php
 $var1 = "var1";
@@ -27,7 +27,7 @@ $var1 = "var1";
 
 ## Data types
 
-Data types in PHP are the same as other scripting languages (ints, Strings, booleans etc). There is no need to define types when declaring variables, but you can define the return type of a function with a scalar type declaration. Booleans are like Java and Ruby where the value is lowercase. PHP also has null but not undefined. All variables are initialised as null, but variables cannot have null value, so this will throw an error.
+Data types in PHP are the same as other scripting languages (ints, Strings, booleans etc). There is no need to define types when declaring variables, but you can define the parameter types of a function with a scalar type declaration. Booleans are like Java and Ruby where the value is lowercase. PHP also has null but not undefined. All variables are initialised as null, but variables cannot have null value, so this will throw an error. You can also do return types like you do in Python.
 
 ```php
 
@@ -63,7 +63,7 @@ strlen($testVar); //=> 5
 str_replace("st", "b", $testVar); //=> "bring"
 
 // return substring from the string at the starting index with optional length arg
-substr($testVar, 2, 3);
+substr($testVar, 2, 3); //=> "rin"
 
 ```
 
